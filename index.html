@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger House | Hamburgueria Artesanal</title>
+  <meta name="description" content="Burger House - hambúrgueres artesanais feitos na brasa. Peça pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">BURGER<span>HOUSE</span></a>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Localização</a>
+        <a href="#" class="btn btn--red nav__cta" data-whatsapp>Fazer pedido</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PÁGINA INICIAL -->
+  <section class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__tag reveal">Hamburgueria artesanal desde 2015</p>
+      <h1 class="hero__title reveal">Feito na brasa.<br><span>Feito para você.</span></h1>
+      <p class="hero__text reveal">Blends de carne selecionada, pão brioche assado todos os dias e molhos exclusivos da casa.</p>
+      <div class="hero__buttons reveal">
+        <a href="#cardapio" class="btn btn--red">Ver cardápio</a>
+        <a href="#" class="btn btn--outline" data-whatsapp>Pedir pelo WhatsApp</a>
+      </div>
+    </div>
+    <a href="#cardapio" class="hero__scroll" aria-label="Rolar para baixo"><span></span></a>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="section menu" id="cardapio">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">Nosso cardápio</p>
+        <h2 class="section__title">Escolha o seu favorito</h2>
+      </div>
+
+      <div class="tabs reveal" id="tabs">
+        <button class="tab active" data-category="burgers">Hambúrgueres</button>
+        <button class="tab" data-category="sides">Acompanhamentos</button>
+        <button class="tab" data-category="drinks">Bebidas</button>
+      </div>
+
+      <div class="menu__grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section about" id="sobre">
+    <div class="container about__inner">
+      <div class="about__image reveal">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Salão da Burger House" loading="lazy">
+      </div>
+      <div class="about__text reveal">
+        <p class="section__tag">Sobre nós</p>
+        <h2 class="section__title">Paixão por hambúrguer de verdade</h2>
+        <p>A Burger House nasceu do sonho de servir o hambúrguer perfeito: carne fresca moída todos os dias, ingredientes de produtores locais e preparo na brasa, do jeito que deve ser.</p>
+        <p>Cada receita é desenvolvida pela nossa equipe de chefs para entregar sabor intenso, textura no ponto certo e uma experiência que faz você voltar.</p>
+        <div class="stats">
+          <div class="stat"><strong data-count="10">0</strong><span>anos de história</span></div>
+          <div class="stat"><strong data-count="50">0</strong><span>mil clientes por ano</span></div>
+          <div class="stat"><strong data-count="100">0</strong><span>% carne fresca</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="section contact" id="contato">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">Venha nos visitar</p>
+        <h2 class="section__title">Localização e horários</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="info-block">
+            <h3>Endereço</h3>
+            <p>Avenida Paulista, 1000<br>Bela Vista, São Paulo - SP<br>CEP 01310-100</p>
+          </div>
+          <div class="info-block">
+            <h3>Horário de funcionamento</h3>
+            <ul class="hours">
+              <li><span>Segunda-feira</span><span>Fechado</span></li>
+              <li><span>Terça a quinta</span><span>18h às 23h</span></li>
+              <li><span>Sexta e sábado</span><span>18h à 0h</span></li>
+              <li><span>Domingo</span><span>17h às 23h</span></li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3>Contato</h3>
+            <p>(11) 99999-9999<br>contato@burgerhouse.com.br</p>
+          </div>
+          <a href="#" class="btn btn--red" data-whatsapp>Fazer pedido agora</a>
+        </div>
+        <div class="contact__map reveal">
+          <iframe src="https://www.google.com/maps?q=Avenida+Paulista,+1000,+Sao+Paulo&output=embed" loading="lazy" title="Mapa da Burger House" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo">BURGER<span>HOUSE</span></a>
+      <p>&copy; 2026 Burger House. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="#" class="whatsapp-float" data-whatsapp aria-label="Pedir pelo WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7c1.9 1 4.1 1.6 6.3 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1 1.1-3.9-.3-.4C5.7 20 5.2 18 5.2 16 5.2 10 10 5.3 16 5.3S26.8 10 26.8 16 22 26.7 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
